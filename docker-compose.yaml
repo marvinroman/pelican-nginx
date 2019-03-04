@@ -1,0 +1,11 @@
+version: '3'
+services:
+  pelican-nginx:
+    build: ./
+    ports:
+      - "8080:80"
+    volumes:
+      - "./app:/app"
+#    image: gcr.io/renova-website-162506/suitetalk-worker-master:a9412e52c7f094483e6569c6ed948e03f82c81c3
+
+# Run with docker-compose up -d
